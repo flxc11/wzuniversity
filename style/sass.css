@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/***************
+  CSS Reset
+****************/
+/* line 6, ../sass/partials/_reset.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, td, th {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../sass/partials/_reset.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 14, ../sass/partials/_reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 17, ../sass/partials/_reset.scss */
+address, caption, cite, code, dfn, th, var, optgroup {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 22, ../sass/partials/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 26, ../sass/partials/_reset.scss */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 31, ../sass/partials/_reset.scss */
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* line 37, ../sass/partials/_reset.scss */
+code, kbd, samp, tt {
+  font-size: 100%;
+}
+
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+/* line 42, ../sass/partials/_reset.scss */
+input, button, textarea, select {
+  *font-size: 100%;
+}
+
+/* line 45, ../sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 49, ../sass/partials/_reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 53, ../sass/partials/_reset.scss */
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 57, ../sass/partials/_reset.scss */
+th, td {
+  vertical-align: top;
+}
+
+/* line 60, ../sass/partials/_reset.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 63, ../sass/partials/_reset.scss */
+sup, sub {
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* remember to highlight anchors and inserts somehow! */
+/* line 68, ../sass/partials/_reset.scss */
+:link, :visited, ins {
+  text-decoration: none;
+}
+
+/* line 71, ../sass/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 75, ../sass/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/*End CSS reset*/
+/**********
+ layout
+ ************/
+/* line 85, ../sass/partials/_reset.scss */
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+/* line 85, ../sass/partials/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 85, ../sass/partials/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* Hides from IE-mac \*/
+/* line 87, ../sass/partials/_reset.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 88, ../sass/partials/_reset.scss */
+.clearfix {
+  display: block;
+}
+
+/* End hide from IE-mac */
+/*End layout*/
+/* line 2, ../sass/partials/_layout.scss */
+body {
+  font: 12px/24px "宋体", verdana;
+  color: #666666;
+  background: #f3f3f3;
+}
+
+/* line 7, ../sass/partials/_layout.scss */
+a:link, a:visited {
+  color: #454b51;
+}
+
+/* line 10, ../sass/partials/_layout.scss */
+a:hover, a:active {
+  color: #278c96;
+}
+
+/* line 130, icons/*.png */
+.icons-sprite, .icons-icon1, .icons-icon10, .icons-icon11, .icons-icon12, .icons-icon2, .icons-icon3, .icons-icon4, .icons-icon5, .icons-icon6, .icons-icon7, .icons-icon8, .icons-icon9 {
+  background: url('../images/icons-s51426f95d3.png') no-repeat;
+}
+
+/* line 2, ../sass/partials/_modules.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../sass/partials/_modules.scss */
+.start-page, .index-page {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bghome.jpg?1407487930');
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 14, ../sass/partials/_modules.scss */
+.logo {
+  width: 201px;
+  height: 51px;
+  background-image: url('../images/imglogo.png?1407670419');
+  background-size: 201px 51px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+/* line 25, ../sass/partials/_modules.scss */
+.index-page {
+  background-image: url('../images/bgindex.jpg?1407671375');
+}
+
+/* line 29, ../sass/partials/_modules.scss */
+.items-btn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* line 35, ../sass/partials/_modules.scss */
+.items-btn ul li {
+  float: left;
+  width: 114px;
+  padding: 0 23px;
+}
+/* line 39, ../sass/partials/_modules.scss */
+.items-btn ul li i {
+  display: block;
+  width: 57px;
+  height: 57px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon1 {
+  background-position: 0 0;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon10 {
+  background-position: 0 -114px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon11 {
+  background-position: 0 -228px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon12 {
+  background-position: 0 -342px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon2 {
+  background-position: 0 -456px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon3 {
+  background-position: 0 -570px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon4 {
+  background-position: 0 -684px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon5 {
+  background-position: 0 -798px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon6 {
+  background-position: 0 -912px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon7 {
+  background-position: 0 -1026px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon8 {
+  background-position: 0 -1140px;
+}
+
+/* line 60, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon9 {
+  background-position: 0 -1254px;
+}
