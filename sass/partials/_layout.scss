@@ -5,8 +5,13 @@ body {
 	background: #f3f3f3;
 }
 a:link,a:visited {
-	color: #454b51;
+	color: #666666;
 }
 a:hover,a:active {
-	color: #278c96;
+	color: #0d3973;
+}
+.menu_open,.slidesjs-pagination li a,#slides dl dt i,.news-list i,.reset_input i,#menu ul li a i,#footer a,.menu_home {
+	background-image: image-url('iconbg.png');
+	-webkit-background-size: 200px 200px;
+	background-size: 200px 200px;
 }

@@ -7,6 +7,6 @@
 @import "partials/layout";
 $icons-layout: smart;
 @import "icons/*.png";
+@import "partials/swiper";
 @import "partials/modules";
 @include  all-icons-sprites;
-$icons-sprite-size: 50%;
