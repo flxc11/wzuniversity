@@ -30,19 +30,11 @@ body {
 	background-size: 201px 51px;
 	position: absolute;
 	bottom: 50%;
-	margin-bottom: -15px;
+	margin-bottom: -200px;
 	left: 50%;
 	margin-left: -100px;
-	-webkit-transform: rotate(0) scale(0.01);
-	-moz-transform: rotate(0) scale(0.01);
-	-ms-transform: rotate(0) scale(0.01);
-	-o-transform: rotate(0) scale(0.01);
-	transform: rotate(0) scale(0.01);
-	-webkit-transition: 1s ease-in-out;
-	-moz-transition: 1s ease-in-out;
-	-ms-transition: 1s ease-in-out;
-	-o-transition: 1s ease-in-out;
-	transition: 1s ease-in-out;
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 .index-page {
 	@extend .start-page;

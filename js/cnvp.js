@@ -42,14 +42,9 @@ define(function(require){
 
         //首页
         $(".logo").animate({
-            'margin-bottom': '-25px'}, {
-                step: function() {
-                    $(this).css('-webkit-transform','rotate(720deg) scale(1)');
-                    $(this).css('-moz-transform','rotate(720eg) scale(1)');
-                    $(this).css('transform','rotate(720deg) scale(1)');
-                },
-                duration:'slow'
-            },
+            'margin-bottom': '-25px',
+            'opacity': 1
+        },
             1000
         );
 
