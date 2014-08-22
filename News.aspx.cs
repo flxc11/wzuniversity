@@ -53,5 +53,25 @@ namespace WebSite.wzwap
                 this.rpt_picnews.DataBind();
             }
         }
+
+        /// <summary>
+        /// Substring NewsTitle
+        /// </summary>
+        /// <param name="newsTitle">News Title</param>
+        /// <param name="length">Title Length</param>
+        /// <returns>News Title</returns>
+        public string GetString(string newsTitle, int length)
+        {
+            string str = string.Empty;
+            if (newsTitle.Length > length)
+            {
+                str = newsTitle.Substring(0, length) + "...";
+            }
+            else
+            {
+                str = newsTitle;
+            }
+            return str;
+        }
     }
 }

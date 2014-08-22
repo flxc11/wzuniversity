@@ -44,7 +44,7 @@
 			        <dl>
 				        <dt><i></i><%#Convert.ToDateTime(Eval("PostTime")).ToString("yyyy-MM-dd") %></dt>
 				        <dd class="pic"><img src="<%#Eval("NewsImages").ToString().Replace("{#InstallDir}", "/") %>" alt=""></dd>
-				        <dd class="txt"><a href="shownews.aspx?ID=<%#Eval("NewsID") %>"><%#Eval("NewsTitle") %></a></dd>
+				        <dd class="txt"><a href="shownews.aspx?ID=<%#Eval("NewsID") %>"><%# GetString(Eval("NewsTitle").ToString(), 25) %></a></dd>
 			        </dl>
                 </ItemTemplate>
             </asp:Repeater>
