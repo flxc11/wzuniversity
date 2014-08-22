@@ -40,6 +40,7 @@
 		</div>
 		<div class="news-list" id="search-news">
 			<ul></ul>
+			<div class="list_loading"></div>
 		</div>
 	</div>
 </body>

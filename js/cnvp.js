@@ -52,6 +52,8 @@ define(function(require){
         if ($(".about")[0]) {
             GetSingle(CurrentColumnId);
         };
+
+        $(".list_loading").html('<i></i><span>努力加载中...</span>');
         // 新闻加载
         if ($("#news-list")[0]) {
             GetNewsList(CurrentColumnId);

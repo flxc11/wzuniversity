@@ -288,6 +288,7 @@ body {
 	overflow: hidden;
 	padding: 0 0 40px 0;
 	ul {
+		overflow: hidden;
 		li {
 			border-bottom: 1px solid #ebeaea;
 			padding: 10px 0;
@@ -335,7 +336,6 @@ body {
 	position: relative;
 }
 .search_input {
-	text-indent: 15px;
 	height: 15px;
 	line-height: 16px;
 	display: block;
@@ -343,7 +343,7 @@ body {
 	width: 132px;
 	border: none;
 	color: #6c6c6c;
-	padding: 6px 20px 6px 15px;
+	padding: 6px 20px 6px 30px;
 	background-color: #fff;
 	margin-top: 12.5px;
 	@include border-radius(15px);
@@ -354,7 +354,7 @@ body {
 	position: absolute;
 	display: block;
 	top: 10px;
-	left: 20px;
+	left: 15px;
 	i {
 		display: block;
 		width: 12px;
@@ -494,4 +494,54 @@ body {
 .about img,.cnt-shownews img {
 	max-width: 100%;
 	height: auto;
+}
+.list_loading {
+	height: 16px;
+	padding: 20px 0 30px;
+	text-align: center;
+	background: #f0f1f1;
+	i {
+		height: 16px;
+		width: 16px;
+		display: inline-block;
+		background-position: -59px 0;
+		margin-right: 10px;
+		vertical-align: middle;
+		-webkit-animation: loading 1s infinite linear;
+		-ms-animation: loading 1s infinite linear;
+		-o-animation: loading 1s infinite linear;
+		-moz-animation: loading 1s infinite linear;
+		animation: loading 1s infinite linear;
+	}
+	span {
+		height: 16px;
+		display: inline-block;
+		line-height: 16px;
+		vertical-align: middle;
+		color: #A0A0A0;
+	}
+}
+@-webkit-keyframes loading
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes loading
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
 }

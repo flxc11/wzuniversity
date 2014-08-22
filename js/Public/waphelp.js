@@ -50,9 +50,9 @@ function loadMore(columnId) {
             Action: "GetNewsList",
             ColumnID: columnId
         },
-        before: function () {
+        beforeSend: function () {
             //setTimeout($(".news-list ul").append('<li class="loading1">努力加载中</li>'),5000)
-            $(".news-list ul").append('<li class="loading1">努力加载中</li>');
+            //$(".list_loading").html('<i></i><span>努力加载中...</span>');
         },
         success: function (json) {
             var d = eval("(" + json + ")");
@@ -68,7 +68,7 @@ function loadMore(columnId) {
                     })
                 }
                 var $Html = $(Html).hide();
-                $(".news-list ul").remove('.loading1');
+                //$(".news-list ul li.loading1").remove()
                 $(".news-list ul").append($Html);
                 $Html.fadeIn();
             }
@@ -109,9 +109,9 @@ function SearchMore(keyWord) {
             Action: "GetSearchList",
             KeyWord: keyWord
         },
-        before: function () {
+        beforeSend: function () {
             //setTimeout($(".news-list ul").append('<li class="loading1">努力加载中</li>'),5000)
-            $(".news-list ul").append('<li class="loading1">努力加载中</li>');
+            //$(".list_loading").html('<i></i><span>努力加载中...</span>');
         },
         success: function (json) {
             var d = eval("(" + json + ")");
@@ -127,7 +127,7 @@ function SearchMore(keyWord) {
                     })
                 }
                 var $Html = $(Html).hide();
-                $(".news-list ul").remove('.loading1');
+                //$(".news-list ul li.loading1").remove()
                 $(".news-list ul").append($Html);
                 $Html.fadeIn();
             }
