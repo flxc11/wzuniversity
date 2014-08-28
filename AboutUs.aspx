@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" class="loading">
 <head runat="server">
 <meta charset="UTF-8" />
 <title>温州大学</title>
@@ -34,11 +34,12 @@
                 <asp:Repeater ID="rpt_Column" runat="server">
                     <ItemTemplate>
 				        <div class="swiper-slide" id="aboutus">
-					        <div class="title"><a href="javascript:;" data-id="<%#Eval("ColumnID") %>" <%# new WapHelper.WapHelp().ClassHover(Eval("ColumnID").ToString(), CurrentColumnId) %>><%#Eval("ColumnName") %></a></div>
+					        <div class="title"><%#GetTargetColumn(Eval("ColumnUrl").ToString(), Eval("ColumnID").ToString(), Eval("ColumnName").ToString()) %></div>
 				        </div>
                     </ItemTemplate>
                 </asp:Repeater>
 			</div>
+
 		</div>
 		<div class="shownews">
             <div class="about"></div>
@@ -49,5 +50,16 @@
 		</div>
 
 	</div>
+	<div id="loading_mask">
+        <div class="loading_mask">
+            <ul class="anm">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

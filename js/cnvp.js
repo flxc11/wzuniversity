@@ -75,7 +75,9 @@ define(function(require){
 
         $("#aboutus a").on("click", function() {
             var colId = $(this).attr("data-id");
-            GetSingle(colId);
+            if (colId) {
+                GetSingle(colId);
+            };
         });
 
         $("#news a").on("click", function() {

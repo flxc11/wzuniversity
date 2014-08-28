@@ -33,7 +33,7 @@ namespace WebSite.wzwap
                     this.GetNewsList();
                     break;
                 case "GetSearchList":
-                    GetSearchList();
+                    this.GetSearchList();
                     break;
                 default:
                     break;
@@ -52,7 +52,7 @@ namespace WebSite.wzwap
             {
                 using (DataTable dt = 
                     DbHelper.ExecuteTable(
-                    "select NewsContent from CNVP_NewsContent Where NewsID=(select top 1 NewsID from CNVP_NewsInfo where ISShow=1 and ISAuditing=1 and ColumnID = " + columnId + ")"))
+                    "select NewsContent from CNVP_NewsContent Where NewsID=(select top 1 NewsID from CNVP_NewsInfo where ISShow=1 and ISAuditing=1 and NewsTitle like '%手机版%' and ColumnID = " + columnId + ")"))
                 {
                     if (dt != null && dt.Rows.Count > 0)
                     {

@@ -44,3 +44,8 @@ seajs.on('define', function(data) {
     data.uri = data.uri.replace(TIME_STAMP, '')
   }
 });
+$(window).bind('DOMContentLoaded',function(){
+    setTimeout(function(){
+        $('html').removeClass('loading');
+    },400);
+});

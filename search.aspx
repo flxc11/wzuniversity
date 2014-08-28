@@ -3,7 +3,7 @@
 <%@ Register Src="~/wzwap/control/left.ascx" TagPrefix="uc1" TagName="left" %>
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="loading">
 <head>
 	<meta charset="UTF-8">
 	<title>温州大学</title>
@@ -43,5 +43,16 @@
 			<div class="list_loading"></div>
 		</div>
 	</div>
+	<div id="loading_mask">
+        <div class="loading_mask">
+            <ul class="anm">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

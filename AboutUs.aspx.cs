@@ -23,6 +23,28 @@ namespace WebSite.wzwap
         public string ParentColumn, CurrentColumnId = string.Empty;
 
         /// <summary>
+        /// Get Target Column
+        /// </summary>
+        /// <param name="colUrl">Column Url</param>
+        /// <param name="columnId">Column ID</param>
+        /// <param name="columnName">Column Name</param>
+        /// <returns>Column string</returns>
+        public string GetTargetColumn(string colUrl, string columnId, string columnName)
+        {
+            string str = string.Empty;
+            if (string.IsNullOrEmpty(colUrl))
+            {
+                str = "<a href=\"javascript:;\" data-id=\"" + columnId + "\""
+                      + new WapHelper.WapHelp().ClassHover(columnId, this.CurrentColumnId) + ">" + columnName + "</a>";
+            }
+            else
+            {
+                str = "<a href=\"" + colUrl.Replace("{#InstallDir}", "/") + "\" target=\"_blank\">" + columnName + "</a>";
+            }
+            return str;
+        }
+
+        /// <summary>
         /// About Us
         /// </summary>
         /// <param name="sender">sender s</param>
@@ -47,5 +69,7 @@ namespace WebSite.wzwap
                 this.rpt_Column.DataBind();
             }
         }
+
+        
     }
 }
